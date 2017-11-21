@@ -27,3 +27,7 @@ def home():
     if ('user' in session):
         return render_template('home.html')
     return redirect(url_for('root'))
+
+if __name__ == '__main__':
+    my_app.debug = True
+    my_app.run()
